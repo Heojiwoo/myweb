@@ -1,0 +1,477 @@
+/* body:not(#index, #hospital, #pharmacy){
+	margin: 0;
+	background-color: #B8DFF8;
+} */
+
+.carousel-inner {
+    display: flex;
+    height: 600px;
+}
+
+li {
+	list-style: none;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: 550px;
+    /* margin-bottom: 20px; */
+}
+
+/* 메인페이지 - 상단 메뉴 바 */
+
+#index {
+	background-color: white;
+	margin: 0;
+}
+
+.topnav {
+	overflow: hidden;
+	background-color: #B8DFF8;
+	background-image: url(./icons8-hospital-96.png);
+	background-repeat: no-repeat;
+	background-position: 3% 33% ;
+	background-size: 70px;
+}
+  
+.topnav a {
+	color: black;
+	text-decoration: none;
+	font-size: 25px; /* 글자크기 */
+	text-align: center;  /* 중앙 정렬 */
+	font-weight: bold;
+	padding: 14px 16px;
+	display: block;
+	float: left;
+	margin: 0 7px;
+}
+
+nav#topMenu {
+width: 600px;
+float: right;
+margin: 50px 20px 0 0;
+}
+  
+.topnav a:hover {
+color: white;
+}
+
+.topnav .icon {
+display: none;
+}
+
+@media screen and (max-width: 600px) {
+	.topnav a {display:none;}
+  
+	.topnav a.icon {
+	  display: block;
+	  float: right;
+	}
+  
+	.topnav.responsive {position: relative;}
+  
+	.topnav.responsive a {
+	  float: none;
+	  display: block;
+	  text-align: right;
+	}
+  
+	.topnav.responsive .icon {
+	  position: absolute;
+	  right: 0;
+	  top: 0;
+	}
+}
+
+/* 마이페이지 - 로그인 */
+
+.container-login {
+	background: #B8DFF8;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	height: 100vh;
+	margin: -20px 0 50px;
+}
+
+.login a {
+	color: #333;
+	font-size: 14px;
+	text-decoration: none;
+	margin: 15px 0;
+}
+
+.login #sub {
+    width: 100%;
+	border-radius: 20px;
+	border: 1px solid #B8DFF8;
+	background-color: #B8DFF8;
+	color: black;
+	font-size: 16px;
+	font-weight: bold;
+	padding: 12px 45px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	transition: transform 80ms ease-in;
+}
+
+.login form {
+	background-color: #FFFFFF;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 0 50px;
+	height: 100%;
+	text-align: center;
+}
+
+.login input {
+    border-radius: 5px;
+	background-color: #eee;
+	border: none;
+	padding: 12px 15px;
+	margin: 8px 0;
+	width: 95%;
+}
+
+.login {
+	background-color: #fff;
+	border-radius: 10px;
+  	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+	position: relative;
+	overflow: hidden;
+	width: 768px;
+	max-width: 100%;
+	min-height: 480px;
+}
+
+/* 회원가입 페이지 */
+
+.container-join {
+	background: #B8DFF8;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	height: 100vh;
+	margin: -20px 0 50px;
+}
+
+.join #sub {
+    width: 80%;
+	border-radius: 20px;
+	border: 1px solid #B8DFF8;
+	background-color: #B8DFF8;
+	color: black;
+	font-size: 16px;
+	font-weight: bold;
+	padding: 12px 45px;
+	letter-spacing: 1px;
+	margin-top: 10px;
+}
+
+.join #btn {
+    width: 20%;
+	border-radius: 20px;
+	border: 1px solid #B8DFF8;
+	background-color: #B8DFF8;
+	color: black;
+	font-size: 13px;
+	font-weight: bold;
+	/* padding: 12px 45px; */
+}
+
+.join h1 {
+	text-align: center;
+}
+
+.join form {
+	background-color: #FFFFFF;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 0 70px;
+	height: 30%;
+	text-align: right;
+	width: 500px;
+}
+
+
+.join #id, #password, #yy, #mm, #dd, #name, #email, #tel, #btn, #num {
+    border-radius: 5px;
+	background-color: #eee;
+	border: none;
+	padding: 12px 15px;
+	margin-top: 6px;
+	width: 65%;
+}
+
+.join {
+	background-color: #fff;
+	border-radius: 10px;
+  	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+	position: relative;
+	width: 768px;
+	max-width: 100%;
+	min-height: 480px;
+}
+
+.join strong {
+	float: left;
+	padding-right: 50px;
+}
+
+.join #yy, #mm, #dd {
+	width: 17%;
+}
+
+.join #tel {
+	width: 44%;
+}
+
+#hospital {
+	background-color: white;
+	margin: 0;
+	background-image: url(./imgh.jpg);
+	background-repeat: no-repeat;
+	background-position: 10% 20%;
+	background-size: 100% 58%;
+	background-color: rgba(255, 255, 255, 0.1); /* 배경 색상 및 투명도 설정 */
+	background-attachment: fixed;
+}
+
+#pharmacy {
+	/* background-color: white; */
+	margin: 0;
+	background-image: url(./imgh.jpg);
+	background-repeat: no-repeat;
+	background-position: 10% 20%;
+	background-size: 100% 40%;
+	background-color: rgba(255, 255, 255, 0.1); /* 배경 색상 및 투명도 설정 */
+	background-attachment: fixed;
+}
+
+#aed {
+	/* background-color: white; */
+	margin: 0;
+	background-image: url(./imgh.jpg);
+	background-repeat: no-repeat;
+	background-position: 10% 43%;
+	background-size: 100% 57%;
+	background-color: rgba(255, 255, 255, 0.1); /* 배경 색상 및 투명도 설정 */
+	background-attachment: fixed;
+}
+
+table {
+    width: 80%;
+    border-collapse: collapse;
+    /* margin: 20px 0; */
+    border: 1px solid #ccc;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* 테이블 헤더 스타일 */
+table th {
+    background-color: #B8DFF8;
+    color: black;
+    padding: 10px;
+    font-weight: bold;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+/* 테이블 셀 스타일 */
+table td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+/* 짝수 행 배경색 스타일 (선택적으로 사용) */
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* 테이블 셀 가로 정렬 (선택적으로 사용) */
+table td {
+    text-align: center;
+}
+
+/* 테이블 셀 내용 중앙 정렬 (선택적으로 사용) */
+table th, table td {
+    vertical-align: middle;
+}
+
+form {
+    text-align: left; /* Optional, to align form elements to the left within the container */
+	/* background-image: url('imgh.jpg');
+	background-repeat: no-repeat;
+	background-color: rgba(255,255,255,0.25); */
+}
+
+.form-container {
+	/* position: fixed; */
+    text-align: center;
+    padding: 20px;
+    /* background-color: #f2f2f2; */
+}
+
+/* 폼 요소 스타일 */
+form[name="frm_hospital"] {
+    text-align: left;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    /* background-color: #fff; */
+    border: 1px solid #ccc;
+    border-radius: 10px;
+	background-color: rgba(255, 255, 255, 0.9);
+}
+
+form[name="frm_pharmacy"] {
+    text-align: left;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    /* background-color: #fff; */
+    border: 1px solid #ccc;
+    border-radius: 10px;
+	background-color: rgba(255, 255, 255, 0.9);
+}
+
+form[name="frm_aed"] {
+    text-align: left;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    /* background-color: #fff; */
+    border: 1px solid #ccc;
+    border-radius: 10px;
+	background-color: rgba(255, 255, 255, 0.9);
+}
+
+/* 폼 입력 필드 스타일 */
+form[name="frm_hospital"] select { 
+    width: 60%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+}
+
+form[name="frm_pharmacy"] select { 
+    width: 60%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+}
+
+form[name="frm_aed"] select { 
+    width: 60%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+}
+
+/* 버튼 스타일 */
+form[name="frm_hospital"] button {
+    background-color: #B8DFF8;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+form[name="frm_pharmacy"] button {
+    background-color: #B8DFF8;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+form[name="frm_aed"] button {
+    background-color: #B8DFF8;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* 버튼 스타일 (마우스 호버 시) */
+form[name="frm_hospital"] button:hover {
+    color: white;
+}
+
+form[name="frm_pharmacy"] button:hover {
+    color: white;
+}
+
+form[name="frm_aed"] button:hover {
+    color: white;
+}
+
+form[name="frm_hospital"] #oneh {
+	margin-right: 15px;
+}
+
+form[name="frm_hospital"] #twoh {
+	margin-right: 8px;
+}
+
+form[name="frm_hospital"] #threeh {
+	margin-right: 30px;
+}
+
+form[name="frm_pharmacy"] #onep {
+	margin-right: 40px;
+}
+
+form[name="frm_pharmacy"] #twop {
+	margin-right: 8px;
+}
+
+form[name="frm_pharmacy"] #threep {
+	margin-right: 38px;
+}
+
+form[name="frm_aed"] #onep {
+	margin-right: 40px;
+}
+
+form[name="frm_aed"] #twop {
+	margin-right: 8px;
+}
+
+form[name="frm_aed"] #threep {
+	margin-right: 38px;
+}
+
+form[name="frm_hospital"] input[type="text"] { 
+    width: 57%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+}
+
+form[name="frm_pharmacy"] input[type="text"] { 
+    width: 57%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+}
+
+

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang='ko'>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <title>병·의원 정보 웹사이트 - 메인페이지</title>
+  </head>
+<body id="index">
+<header>
+  <div class="topnav" id="myTopnav">
+    <nav id="topMenu">
+      <a href="#" class="subMenu">홈</a>
+      <a href="./hospital.html" class="subMenu">병·의원</a>
+      <a href="./pharmacy.html" class="subMenu">약국</a>
+      <!-- <a href="./aed.html" class="subMenu">자동심장충격기(AED)</a> -->
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+      <!-- void(0) 는 undefined 를 리턴함 .  href 가 동작하지 않게 하기 위함.   href="#" 과 동일 -->
+    </nav>
+  </div>
+</header>
+
+
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+<!-- carousel inner -->
+<div class="carousel-inner">
+<div class="carousel-item active">
+    <img src="./img_hospital_01.jpg" alt="img_hospital_01" width="1100" height="200">
+  </div>
+  <div class="carousel-item">
+    <img src="./img_hospital_02.jpg" alt="img_hospital_02" width="1100" height="200">
+  </div>
+  <div class="carousel-item">
+    <img src="./img_hospital_04.jpg" alt="img_hospital_03" width="1100" height="200">
+  </div>
+</div>
+
+<!-- indicator -->
+<ul class="carousel-indicators">
+  <li data-bs-target="#demo" data-bs-slide-to="0" class="active"></li>
+  <li data-bs-target="#demo" data-bs-slide-to="1"></li>
+  <li data-bs-target="#demo" data-bs-slide-to="2"></li>
+</ul>
+
+<!-- prev, next -->
+<a class="carousel-control-prev" href="#demo" data-bs-slide="prev">
+  <span class="carousel-control-prev-icon"></span>
+</a>
+<a class="carousel-control-next" href="#demo" data-bs-slide="next">
+  <span class="carousel-control-next-icon"></span>
+</a>
+</div>
+
+
+<!-- <div class="cs-center">
+<ul>
+<li>C/S CENTER</li>
+<li></li>
+<li>KAKAO : 전시회를즐기다<br />
+  Mon-Fri 10:00~18:00 (Weekend, Holiday off)</li>
+</ul>
+</div>
+
+<div class="foot_cont">
+<div class="foot_info">
+<div class="foot_info_list">
+  <ul>
+    <li>Company : 전시회를즐기다</li>
+    <li>CEO : CHA SUNG MOON</li>
+    <li>Business License : 107-36-17397 <a href="#" class="btn_licensee_info" onclick="gd_popup_bizInfo('1073617397'); return false;">Check ></a></li>
+    <li>E-Commerce Permit : 2020-서울서초-1509</li>
+    <li style="display:none;">Tel : 070-8614-5551</li>
+    <li>Address : TWIN TOWER, 15, 10-GIL, MABANG-RO, SEOCHO-GU, SEOUL, KOREA </li>
+    <li>CPO : CHA SUNG MOON (contact@enjoyexhibition.co.kr)</li>
+      <li>Contact <button type="button" onclick="popup_email('contact@enjoyexhibition.co.kr');">contact@enjoyexhibition.co.kr</button > for more information.</li>
+      </ul>
+    </div>
+  </div>    -->
+    </div>
+  </body>
+  <script src="./info.js"></script>
+</html>

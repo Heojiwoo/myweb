@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang='ko'>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="./style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>병·의원 정보 웹사이트 - 약국 조회 페이지</title>
+</head>
+<body id="pharmacy">
+    <!-- <h1>병·의원 정보 조회</h1> -->
+    <header>
+        <div class="topnav" id="myTopnav">
+          <nav id="topMenu">
+            <a href="./index.html" class="subMenu">홈</a>
+            <a href="./hospital.html" class="subMenu">병·의원</a>
+            <a href="./pharmacy.html" class="subMenu">약국</a>
+            <!-- <a href="./aed.html" class="subMenu">자동심장충격기(AED)</a> -->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+            <!-- void(0) 는 undefined 를 리턴함 .  href 가 동작하지 않게 하기 위함.   href="#" 과 동일 -->
+          </nav>
+        </div>
+      </header>
+      <br><br>
+    <form name="frm_pharmacy">
+        <strong id="onep">약국명 :</strong><input type="text" name="QN" placeholder="약국명을 검색하세요."><br>
+        <strong id="twop">시/도 선택 :</strong>
+        <select name="Q0" id="Q0">
+        <option value="선택" selected>선택</option>
+        <option value="서울특별시">서울특별시</option>
+        <option value="인천광역시">인천광역시</option>
+        <option value="대전광역시">대전광역시</option>
+        <option value="광주광역시">광주광역시</option>
+        <option value="대구광역시">대구광역시</option>
+        <option value="울산광역시">울산광역시</option>
+        <option value="부산광역시">부산광역시</option>
+        <option value="경기도">경기도</option>
+        <option value="강원도">강원도</option>
+        <option value="충청북도">충청북도</option>
+        <option value="충청남도">충청남도</option>
+        <option value="전라북도">전라북도</option>
+        <option value="전라남도">전라남도</option>
+        <option value="경상북도">경상북도</option>
+        <option value="경상남도">경상남도</option>
+        <option value="제주도">제주도</option>
+    </select><br>
+    <strong id="threep">시군구 :</strong>
+    <select name="Q1" id="Q1">
+        <!-- <option value="%20" selected>전체</option> -->
+    </select><br>
+    <strong>운영요일 :</strong><br>
+    <input type="checkbox" name="QT" value="1" checked><strong>월요일</strong>
+    <input type="checkbox" name="QT" value="2" checked><strong>화요일</strong>
+    <input type="checkbox" name="QT" value="3" checked><strong>수요일</strong>
+    <input type="checkbox" name="QT" value="4" checked><strong>목요일</strong>
+    <input type="checkbox" name="QT" value="5" checked><strong>금요일</strong>
+    <input type="checkbox" name="QT" value="6"><strong>토요일</strong>
+    <input type="checkbox" name="QT" value="7"><strong>일요일</strong>
+    <input type="checkbox" name="QT" value="8"><strong>공휴일</strong><br><br>
+    
+    <button type="button" id="btnLoad_pharmacy">약국 정보 가져오기</button>
+</form>
+<br><br>
+<hr>
+<br><br>
+
+<table id="demoXML_pharmacy"></table><br><br><br>
+
+<script src="./info.js"></script>
+</body>
+</html>

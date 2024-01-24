@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang='ko'>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="./style.css">
+<script src="./info.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>전시/공연 정보 웹사이트 - 회원가입 페이지</title>
+</head>
+<body>
+    <div class="container-join" id="container-join">
+        <div class="join">
+            <h1>회원가입</h1>
+            <form action="./mypage.html" name="frm2">
+                <strong>아이디</strong><input type="text" id="id"><br>
+                <strong>비밀번호</strong><input type="password" id="password"><br>
+                <strong>이름</strong><input type="text" id="name"><br>
+                <strong>생년월일</strong>
+                <input type="text" id="yy" placeholder="년(4자)">
+                <input type="text" id="mm" placeholder="월">
+                <input type="text" id="dd" placeholder="일"><br>
+                <strong>이메일</strong><input type="email" id="email"><br>
+                <strong>전화번호</strong><input type="tel" id="tel" placeholder="전화번호 입력">
+                <input type="button" id="btn" value="인증번호 받기">
+                <input type="text" id="num" placeholder="인증번호를 입력하세요">
+                <button type="button" id="sub" onclick="joinCheck()">가입하기</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
